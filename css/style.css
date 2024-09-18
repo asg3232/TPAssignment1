@@ -1,0 +1,153 @@
+/*
+Name: Andrew Gibson
+Name of file: style.css
+Date Created: 09/01/2024
+Date Late Edited:
+Description: This is a patient registration form for Wraeclast Medical Group
+*/
+
+input, select, textarea {
+  border-radius: 5px;
+  border: 1px solid black;
+  height: 1.5rem;
+}
+
+/* Text in the body */
+body {
+  color: #1a1a1a;
+  margin: 0 auto;
+  font-size: 20px;
+  font-family: Verdana, sans-serif;
+  background-color: bisque;
+}
+
+/* Adjusting margin to put space between labels and inputs */
+select, span {
+  margin-bottom: 10px;
+}
+
+/* Text area width and height */
+form {
+  margin: 0 auto;
+
+  textarea {
+    width: 250px;
+    height: 100px;
+  }
+}
+
+  /* Submit button size and margin */
+  [type="submit"] {
+    font-size:15px;
+  }
+
+  .my-table {
+    width: 100%;
+    background-color: sandybrown;
+    color: black;
+    padding: 50px 0;
+    border-collapse: collapse;
+    font-family: Verdana, sans-serif;
+    margin: 0 auto;
+  }
+
+  /* Padding for the table */
+  .my-table td {
+    padding: 20px;
+  }
+
+  /* Styling for the header including the company name */
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Styling for the dynamic date */
+  #date {
+    margin-left: auto;
+    padding-left: 20px;
+  }
+
+  /* nameItems class to edit location of First name, Middle initial, and Last name */
+  .nameItems {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .locationItems {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  /* flex box to edit location of line items */
+  .flex {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
+  /* Footer margin styling */
+  footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: sandybrown;
+    text-align: center;
+  }
+
+  /* Footer button styling */
+  footer button {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    border-radius: 50px;
+  }
+
+  /* Footer button hover styling */
+  footer button:hover {
+    background-color: royalblue;
+  }
+
+
+  .topSpace {
+    margin-top: 15px;
+  }
+
+  .topSpaceSmall {
+    margin-top: 5px;
+  }
+
+
+  .sexTypes, .illnessTypes {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .columnFlex {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+
+  .leftSpace {
+    margin-left: 20px;
+  }
+
+
+  .bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%
+  }
+
+  .resizeNone {
+    resize: none;
+  }
+}
+
