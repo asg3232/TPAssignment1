@@ -4,7 +4,7 @@ Name: Andrew Gibson
 Name of file: hw1.html
 Date Created: 09/01/2024
 Date Late Edited:
-Description: This is a patient registration form for Wraeclast Medical Group
+Description: This is the HTML code for a patient registration form for Wraeclast Medical Group
 -->
 
 <html lang="en">
@@ -20,7 +20,7 @@ Description: This is a patient registration form for Wraeclast Medical Group
   <script src="js/thankYou.js"></script>
 </head>
 <body onload="document.medicalRegistration.firstName.focus();">
-<form name='medicalRegistration' onSubmit="return thankYou();">
+<form name='medicalRegistration' action="hw1-thankyou.html" method="get">
   <!-- Make a header, this header includes a table -->
   <header>
     <!-- Table for my logo and banner -->
@@ -40,7 +40,7 @@ Description: This is a patient registration form for Wraeclast Medical Group
     </table>
   </header>
     <div class="leftSpace">
-      <!-- First name label and input -->
+      <!-- First name label and input-->
       <div class="flex topSpace">
         <div class="nameItems">
           <label for="firstName">First Name:</label>
@@ -167,11 +167,29 @@ Description: This is a patient registration form for Wraeclast Medical Group
         <div class="columnFlex">
           <label>Sex:</label>
           <div class="sexTypes topSpaceSmall">
-            <span><input id="sex1" name="sex" type="radio" value="Male" required/>Male</span>
-            <span><input id="sex2" name="sex" type="radio" value="Female" required/>Female</span>
-            <span><input id="sex3" name="sex" type="radio" value="Other" required/>Other</span>
+            <span><label for="sex1"></label><input id="sex1" name="sex" type="radio" value="Male" required/>Male</span>
+            <span><label for="sex2"></label><input id="sex2" name="sex" type="radio" value="Female" required/>Female</span>
+            <span><label for="sex3"></label><input id="sex3" name="sex" type="radio" value="Other" required/>Other</span>
           </div>
         </div>
+
+      <!-- Radio buttons for the selection of vaccination status, allowing only one selection -->
+      <div class="columnFlex">
+        <label>Have you been vaccinated?:</label>
+        <div class="sexTypes topSpaceSmall">
+          <span><label for="vaccinated1"></label><input id="vaccinated1" name="vaccinated" type="radio" value="yes" required/>Yes</span>
+          <span><label for="vaccinated2"></label><input id="vaccinated2" name="vaccinated" type="radio" value="no" required/>No</span>
+        </div>
+      </div>
+
+      <!-- Radio buttons for the selection of insurance coverage, allowing only one selection -->
+      <div class="columnFlex">
+        <label>Do you have insurance?:</label>
+        <div class="sexTypes topSpaceSmall">
+          <span><label for="insurance1"></label><input id="insurance1" name="insurance" type="radio" value="yes" required/>Yes</span>
+          <span><label for="insurance2"></label><input id="insurance2" name="insurance" type="radio" value="no" required/>No</span>
+        </div>
+      </div>
 
         <!-- Check boxes for previous illness -->
         <div class="columnFlex">
